@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 header {
     background-color:black;
@@ -14,6 +17,12 @@ main {
     background-color: aqua;
     height: 100vh;
     margin: 10px 80px 10px 80px;
+}
+
+.myfoto>img {
+    width: 200px;
+    height: 200px;
+    background-color: black;
 }
 
 footer {
