@@ -25,15 +25,15 @@
         <section>
             <div>
             <ul>
-                <li><h2>Contacts</h2></li>
-                <li><p>Location: Saint-Petersburg, Rossia</p></li>
-                <li><p>Phone: +7-978-049-08-32</p></li>
+                <h2>Contacts</h2>
+                <li>Location: Saint-Petersburg.<span>Rossia</span></li>
+                <li>Phone: +7-978-049-08-32</li>
                 <li>Email: <a href="mailto:best.torez.ss@gmail.com">best.torez.ss@gmail.com</a></li>
                 <li>GidHub:<a href="https://github.com/SeregaSimba">SeregaSimba</a></li>
             </ul>
         </div>
         </section>
-        <section>
+        <section class="About_me">
             <h2>About me</h2>
             <p>I am 32 years old, I recently got acquainted with the direction of Front-tent development, and I was very attracted to the fact that you can turn a lot of thoughts into reality, and create amazing sites! Has worked in the catering industry all his life, in various positions, and for the last 6 years has worked as a manager of a network of night clubs. During his career, participated in the opening of Clubs, recruitment and training of staff in Moscow, St. Petersburg, Kazan, Nizhny Novgorod, and Yerevan. Conducted 3,784 interviews for various vacancies. After a successful start-up, I left my educated employees in their positions, and was returned to the main club for its further development. I love learning, and constantly learning something new. I really want to develop in the field of AI programming, in 2 months, I studied HTML and CSS. Started learning JS and in the future I plan to get acquainted with all programming languages.</p>
         </section>
@@ -50,13 +50,13 @@
         </section>
         <section>
             <h2>Code Example</h2>
-            <div>
+            <div class="myCode">
                 <p>
                     const encrypt = (text) => {
                         let i = 0;
                         let result = '';
                    
-                        while (i <text.length) {
+                        while (i  text.length) {
                             const step = text[i + 1] || '';
                             result = `${result}${step}${text[i]}`;
                             i += 2;

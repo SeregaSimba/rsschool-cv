@@ -50,9 +50,51 @@ main {
     position: relative;
 }
 
+h1 {
+    padding-top: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 80px;
+    line-height: 5px;
+    letter-spacing: 10px;
+    font-style: italic;
+    text-shadow: 10px 9px 5px  black;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 40px;
+    padding-left: 75px;
+}
+
+section ul li {
+    display: flex;
+    padding: 5px 0 10px 20px;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+
+section p {
+    display: flex;
+    padding: 5px 0 5px 20px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.About_me {
+    width: 1500px;
+}
+
+.myCode {
+    display:table-caption;
+}
+
 .myfoto>img {
-    width: 200px;
-    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    width: 350px;
+    height: 350px;
     background-color: black;
     border-radius: 20px;
 }
