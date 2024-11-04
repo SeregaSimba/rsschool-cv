@@ -23,7 +23,7 @@ I am 32 years old, I recently got acquainted with the direction of Front-tent de
      let i = 0;
      let result = '';
 
-     while (i < text.length) {
+     while (i <text.length) {
          const step = text[i + 1] || '';
          result = `${result}${step}${text[i]}`;
          i += 2;
