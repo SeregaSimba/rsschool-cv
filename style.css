@@ -6,11 +6,11 @@
 
 body {
     overflow-x: hidden;
-    background-color:rgb(50, 49, 49);
+    background-color:rgb(50 22 22);
 }
 
 header {
-    background-color:rgb(50, 49, 49);
+    background-color:rgb(50 22 22);
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@ header>nav>a {
 
 header img {
 width: 100px;
-height: 60px;
+height: 95px;
 display: flex;
 justify-content: start;
 align-items: start;
@@ -38,19 +38,30 @@ align-items: start;
 
 
 main {
-    background-color: aqua;
-    background-image: url(img/istockphoto-173868320-612x612.jpg);
+    border-radius: 20px;
+    background-image: url(img/i.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     height: 100vh;
     margin: 10px 80px 10px 80px;
+    display: grid;
+    overflow:hidden;
+    font-size: 15px;
+    position: relative;
 }
 
 .myfoto>img {
     width: 200px;
     height: 200px;
     background-color: black;
+    border-radius: 20px;
+}
+
+main>section>.myfoto {
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
 }
 
 footer {
