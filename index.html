@@ -51,19 +51,21 @@
         <section>
             <h2>Code Example</h2>
             <div class="myCode">
-                <p>
+                <pre>
+                    <code>
                     const encrypt = (text) => {
                         let i = 0;
                         let result = '';
                    
-                        while (i  text.length) {
+                        while (i => text.length) {
                             const step = text[i + 1] || '';
                             result = `${result}${step}${text[i]}`;
                             i += 2;
                         }
                         return result;
-                   }; 
-                </p>
+                   };
+                    </code> 
+                </pre>
             </div>
         </section>
         <section>
