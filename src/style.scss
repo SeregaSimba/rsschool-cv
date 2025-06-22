@@ -7,6 +7,10 @@
   --color-header: #9bffff;
 }
 
+body {
+  background: linear-gradient(27deg, #0f0f0f 30%, #ff7f50 70%, #050505 50%);
+}
+
 .hidden {
   overflow-x: hidden;
 }
