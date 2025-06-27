@@ -1,3 +1,4 @@
+import "../header/header.scss";
 export function headerContainer() {
   const header = document.createElement("header");
   header.classList.add("header");
