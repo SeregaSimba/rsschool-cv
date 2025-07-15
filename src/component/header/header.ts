@@ -14,16 +14,16 @@ export function headerContainer() {
   containerRssHeader.classList.add("container-rss-header");
   containerHeader.appendChild(containerRssHeader);
 
-  const linkRss = document.createElement("a");
-  linkRss.classList.add("link-rss");
-  linkRss.href = "https://rs.school";
-  linkRss.setAttribute("target", "_blank");
-  containerRssHeader.appendChild(linkRss);
+  // const linkRss = document.createElement("a");
+  // linkRss.classList.add("link-rss");
+  // linkRss.href = "https://rs.school";
+  // linkRss.setAttribute("target", "_blank");
+  // containerRssHeader.appendChild(linkRss);
 
-  const imgRssLink = document.createElement("img");
-  imgRssLink.classList.add("imgRssLink");
-  imgRssLink.setAttribute("src", "../src/img/rs-school-logo.svg");
-  linkRss.appendChild(imgRssLink);
+  // const imgRssLink = document.createElement("img");
+  // imgRssLink.classList.add("imgRssLink");
+  // imgRssLink.setAttribute("src", "../src/img/rs-school-logo.svg");
+  // linkRss.appendChild(imgRssLink);
 
   // link rss
   // title
