@@ -9,6 +9,7 @@ import iconWB from "../main/profile_Img/icons8-webpack.svg";
 import iconMD from "../main/profile_Img/Markdown.svg";
 import iconGit from "../main/profile_Img/icons8-git.svg";
 import imageMee from "../main/profile_Img/miFotoSev1.jpg";
+import imgLogo from "../main/profile_Img/sloth_u7rwxudebo7e.svg";
 
 import iconVk from "../main/profile_Img/vk.svg";
 import iconGitHub from "../main/profile_Img/gitHub.svg";
