@@ -52,6 +52,7 @@ body {
 .container-about-my {
   display: flex;
   width: 50%;
+  flex-direction: column;
 }
 
 .about-my-profele {
@@ -74,6 +75,12 @@ body {
   width: 100%;
 }
 
+.containerInfoAboutMe {
+}
+
+.infoAboutMeP {
+  color: #6b6b6b;
+}
 // about mi
 
 // section languages

@@ -1,23 +1,38 @@
-************************************************
+---
+
 # Sergei Lagaev
-************************************************
+
+---
+
 ## Contacts
-************************************************
-* Location: Saint-Petersburg, Rossia
-* Phone: +7-978-049-08-32
-* Email: best.torez.ss@gmail.com
-* GidHub: [SeregaSimba](https://github.com/SeregaSimba)
+
+---
+
+- Location: Saint-Petersburg, Rossia
+- Phone: +7-978-049-08-32
+- Email: best.torez.ss@gmail.com
+- GidHub: [SeregaSimba](https://github.com/SeregaSimba)
+
 ## About me
-************************************************
-I am 32 years old, I recently got acquainted with the direction of Front-tent development, and I was very attracted to the fact that you can turn a lot of thoughts into reality, and create amazing sites! Has worked in the catering industry all his life, in various positions, and for the last 6 years has worked as a manager of a network of night clubs. During his career, participated in the opening of Clubs, recruitment and training of staff in Moscow, St. Petersburg, Kazan, Nizhny Novgorod, and Yerevan. Conducted 3,784 interviews for various vacancies. After a successful start-up, I left my educated employees in their positions, and was returned to the main club for its further development. I love learning, and constantly learning something new. I really want to develop in the field of AI programming, in 2 months, I studied HTML and CSS. Started learning JS and in the future I plan to get acquainted with all programming languages.
-## Skills 
-************************************************
-* HTML 
-* CSS
-* JS (Basic)
-* GidHub 
+
+---
+
+I am 33 years old. I have recently started developing my career in front-end development, as I am inspired by the opportunity to implement my ideas and create modern, interactive websites. I have over 10 years of experience in the public catering industry, working in various positions, and for the past 6 years as a manager in a chain of nightclubs in Moscow, St. Petersburg, Kazan, Nizhny Novgorod, and Yerevan. I have been involved in the opening of new clubs, the recruitment and training of staff, conducted over 3,700 interviews, and effectively transferred management processes after successful project launches.
+I consider myself a fast learner and constantly strive for new knowledge. I am enthusiastically mastering HTML and CSS, and actively learning JavaScript. In the near future, I plan to delve into other programming languages and develop my career in the IT field.
+
+## Skills
+
+---
+
+- HTML
+- CSS
+- JS (Basic)
+- GidHub
+
 ## Code Example
-************************************************
+
+---
+
 ```
    const encrypt = (text) => {
      let i = 0;
@@ -31,13 +46,20 @@ I am 32 years old, I recently got acquainted with the direction of Front-tent de
      return result;
 };
 ```
+
 ## Education
-************************************************
-* Ukrainian branch, Simferopol Academy of the Ministry of Internal Affairs, Faculty of Law. bachelor
-* Courses
-  * [fructcode](https://fructcode.com/ru/courses/html-and-css/tags-ul-li/)
-  
+
+---
+
+- Ukrainian branch, Simferopol Academy of the Ministry of Internal Affairs, Faculty of Law. bachelor
+- Courses
+
+  - [fructcode](https://fructcode.com/ru/courses/html-and-css/tags-ul-li/)
+
   ## English
-  **********************************************
+
+  ***
+
   #### A2 (I am currently studying)
-  **********************************************
+
+  ***
