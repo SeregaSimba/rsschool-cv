@@ -251,7 +251,7 @@ export default function MainContainer() {
 
   const contactMyH3 = document.createElement("h3");
   contactMyH3.classList.add("contact-My-H3");
-  contactMyH3.innerText = "Contact Me";
+  contactMyH3.innerText = "Contact My";
   containerContactMy.append(contactMyH3);
 
   const contactMyDiv = document.createElement("div");
@@ -319,33 +319,42 @@ export default function MainContainer() {
 
   // me e-mail
 
-  const containerLinkMesseger = document.createElement("div");
-  containerLinkMesseger.classList.add("containerlinkMesseger");
-  containerContactMy.append(containerLinkMesseger);
+  // container me Diploma
 
-  const divLinkMassege = document.createElement("div");
-  divLinkMassege.classList.add("divLinkMassege");
-  containerLinkMesseger.append(divLinkMassege);
+  const containerMeDiploma = document.createElement("div");
+  containerMeDiploma.classList.add("container-Me-Diploma");
+  main.append(containerMeDiploma);
 
-  const linkVk = document.createElement("a");
-  linkVk.classList.add("linkVk");
-  linkVk.setAttribute("href", "https://m.vk.com/best.sa92");
-  divLinkMassege.append(linkVk);
+  const titleH3Diploma = document.createElement("h3");
+  titleH3Diploma.classList.add("title-H3-Diploma");
+  titleH3Diploma.innerText = "Me Diploma";
+  containerMeDiploma.append(titleH3Diploma);
 
-  const imageVk = document.createElement("img");
-  imageVk.classList.add("imageVk");
-  imageVk.setAttribute("src", iconVk);
-  linkVk.append(imageVk);
+  const sectionMeDiploma = document.createElement("section");
+  sectionMeDiploma.classList.add("section-Me-Diploma");
+  containerMeDiploma.append(sectionMeDiploma);
 
-  const linkIns = document.createElement("a");
-  linkIns.classList.add("linkIns");
-  linkIns.setAttribute("href", "https://www.instagram.com/serega_simba/");
-  divLinkMassege.append(linkIns);
+  const containerScrollDiploma = document.createElement("div");
+  containerScrollDiploma.classList.add("containerScrollDiploma");
+  sectionMeDiploma.append(containerScrollDiploma);
 
-  const imageIns = document.createElement("img");
-  imageIns.classList.add("imageIns");
-  imageIns.setAttribute("src", iconInst);
-  linkIns.append(imageIns);
+  const buttonLeft = document.createElement("button");
+  buttonLeft.classList.add("buttonLeft", "button");
+  sectionMeDiploma.prepend(buttonLeft);
 
-  // contact my
+  const spanButtonLeft = document.createElement("span");
+  spanButtonLeft.classList.add("spanButtonLeft");
+  spanButtonLeft.innerText = "<";
+  buttonLeft.append(spanButtonLeft);
+
+  const buttonRight = document.createElement("button");
+  buttonRight.classList.add("buttonRight", "button");
+  sectionMeDiploma.append(buttonRight);
+
+  const spanButtonRight = document.createElement("span");
+  spanButtonRight.classList.add("spanButtonRight");
+  spanButtonRight.innerText = ">";
+  buttonRight.append(spanButtonRight);
+
+  // container me Diploma
 }

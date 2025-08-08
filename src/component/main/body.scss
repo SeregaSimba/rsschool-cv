@@ -76,6 +76,12 @@ body {
 }
 
 .containerInfoAboutMe {
+  width: 40vw;
+  font-size: 1.2vw;
+  margin: 2vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .infoAboutMeP {
@@ -288,6 +294,7 @@ body {
 }
 
 .contact-My-H3 {
+  margin-top: 3vw;
   font-size: 3vw;
   width: 100%;
   color: white;
@@ -377,20 +384,82 @@ body {
 }
 // contact my
 
-.containerlinkMesseger {
+.container-Me-Diploma {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.divLinkMassege {
+.title-H3-Diploma {
+  margin-top: 3vw;
+  font-size: 3vw;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  color: white;
 }
 
-.linkVk {
+.section-Me-Diploma {
+  width: 55vw;
+  height: 25vw;
+  background-color: white;
+  margin: 3vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.imageVk {
+.containerScrollDiploma {
+  width: 80%;
+  height: 100%;
+  background-color: red;
 }
 
-.linkIns {
+.buttonLeft {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #6b6b6b;
+  border: solid 0px;
+  cursor: pointer;
 }
 
-.imageIns {
+.spanButtonLeft {
+  font-size: 1.5vw;
+  transition: 1s;
+}
+
+.spanButtonLeft:hover {
+  transition: 1s;
+  margin-right: 20px;
+}
+
+.buttonRight {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #6b6b6b;
+  border: solid 0px;
+  cursor: pointer;
+}
+
+.spanButtonRight {
+  font-size: 1.5vw;
+  transition: 1s;
+}
+
+.spanButtonRight:hover {
+  transition: 1s;
+  margin-left: 20px;
+}
+
+.button {
+  transition: 1s;
+}
+
+.button:hover {
+  border: solid 1px white;
+  transition: 1s;
+  background-color: gold;
 }
