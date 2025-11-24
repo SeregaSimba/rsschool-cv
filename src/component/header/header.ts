@@ -67,17 +67,22 @@ export function headerContainer() {
   burgerDivHeader.appendChild(titleAboutPage);
 
   const linkPage1 = document.createElement("a");
-  linkPage1.textContent = "----";
+  linkPage1.setAttribute(
+    "href",
+    "https://seregasimba.github.io/Christmas-shop-page-rss/"
+  );
+  linkPage1.setAttribute("target", "_blank");
+  linkPage1.innerText = "My first job";
   linkPage1.classList.add("linkPage1");
   burgerDivHeader.appendChild(linkPage1);
 
   const linkPage2 = document.createElement("a");
-  linkPage2.textContent = "----";
+  linkPage2.textContent = "Correctional work is underway ⚠️ ☢️ ";
   linkPage2.classList.add("linkPage2");
   burgerDivHeader.appendChild(linkPage2);
 
   const linkPage3 = document.createElement("a");
-  linkPage3.textContent = "----";
+  linkPage3.textContent = "Correctional work is underway ⚠️ ☢️ ";
   linkPage3.classList.add("linkPage3");
   burgerDivHeader.appendChild(linkPage3);
 

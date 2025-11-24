@@ -9,6 +9,9 @@ import iconWB from "../main/profile_Img/icons8-webpack.svg";
 import iconMD from "../main/profile_Img/Markdown.svg";
 import iconGit from "../main/profile_Img/icons8-git.svg";
 import imageMee from "../main/profile_Img/miFotoSev1.jpg";
+import imageDep1 from "../main/profile_Img/DipHTMLCSS.png";
+import imageDep2 from "../main/profile_Img/DipJs.png";
+import imageDep3 from "../main/profile_Img/DipRSS.png";
 import imgLogo from "../main/profile_Img/sloth_u7rwxudebo7e.svg";
 
 import iconVk from "../main/profile_Img/vk.svg";
@@ -149,13 +152,13 @@ export default function MainContainer() {
 
   const canvasCSS = document.createElement("canvas");
   canvasCSS.classList.add("canvasCSS");
-  canvasCSS.setAttribute("data-percent", "85");
+  canvasCSS.setAttribute("data-percent", "90");
   canvasCSS.id = "myCanvas";
   radiusCSS.appendChild(canvasCSS);
 
   const pTitleRadiusCss = document.createElement("p");
   pTitleRadiusCss.classList.add("pTitleRadius");
-  pTitleRadiusCss.innerText = "85%";
+  pTitleRadiusCss.innerText = "90%";
   radiusCSS.appendChild(pTitleRadiusCss);
 
   const containerScss = document.createElement("div");
@@ -186,13 +189,13 @@ export default function MainContainer() {
 
   const canvasJS = document.createElement("canvas");
   canvasJS.classList.add("canvasJS");
-  canvasJS.setAttribute("data-percent", "65");
+  canvasJS.setAttribute("data-percent", "85");
   canvasJS.id = "myCanvas";
   radiusJS.appendChild(canvasJS);
 
   const pTitleRadiusJs = document.createElement("p");
   pTitleRadiusJs.classList.add("pTitleRadius");
-  pTitleRadiusJs.innerText = "65%";
+  pTitleRadiusJs.innerText = "85%";
   radiusJS.appendChild(pTitleRadiusJs);
 
   const containerTs = document.createElement("div");
@@ -334,9 +337,42 @@ export default function MainContainer() {
   sectionMeDiploma.classList.add("section-Me-Diploma");
   containerMeDiploma.append(sectionMeDiploma);
 
-  const containerScrollDiploma = document.createElement("div");
+  const containerScrollDiploma = document.createElement("sections");
   containerScrollDiploma.classList.add("containerScrollDiploma");
   sectionMeDiploma.append(containerScrollDiploma);
+
+  const dipA1 = document.createElement("a");
+  dipA1.classList.add("dipA1");
+  dipA1.setAttribute("href", "../src/component/main/profile_Img/Unknownjs.pdf");
+  dipA1.setAttribute("target", "_blank");
+  containerScrollDiploma.appendChild(dipA1);
+
+  const firstImgDip = document.createElement("img");
+  firstImgDip.src = imageDep1;
+  firstImgDip.classList.add("firstDipImg");
+  dipA1.appendChild(firstImgDip);
+
+  const dipA2 = document.createElement("a");
+  dipA2.classList.add("dipA1");
+  dipA2.setAttribute("href", "../src/component/main/profile_Img/Unknown.pdf");
+  dipA2.setAttribute("target", "_blank");
+  containerScrollDiploma.appendChild(dipA2);
+
+  const firstImgDip2 = document.createElement("img");
+  firstImgDip2.src = imageDep2;
+  firstImgDip2.classList.add("firstDipImg");
+  dipA2.appendChild(firstImgDip2);
+
+  const dipA3 = document.createElement("a");
+  dipA3.classList.add("dipA1");
+  dipA3.setAttribute("href", "../src/component/main/profile_Img/bk2bddt3.pdf");
+  dipA3.setAttribute("target", "_blank");
+  containerScrollDiploma.appendChild(dipA3);
+
+  const firstImgDip3 = document.createElement("img");
+  firstImgDip3.src = imageDep3;
+  firstImgDip3.classList.add("firstDipImg");
+  dipA3.appendChild(firstImgDip3);
 
   const buttonLeft = document.createElement("button");
   buttonLeft.classList.add("buttonLeft", "button");
