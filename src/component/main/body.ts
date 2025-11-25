@@ -17,6 +17,7 @@ import imgLogo from "../main/profile_Img/sloth_u7rwxudebo7e.svg";
 import iconVk from "../main/profile_Img/vk.svg";
 import iconGitHub from "../main/profile_Img/gitHub.svg";
 import iconInst from "../main/profile_Img/ins.svg";
+import { sliderLeft, sliderRight } from "./buttonSlider";
 
 export default function MainContainer() {
   const titleInfoMe =
@@ -338,14 +339,20 @@ export default function MainContainer() {
   containerMeDiploma.append(sectionMeDiploma);
 
   const containerScrollDiploma = document.createElement("sections");
+  containerScrollDiploma.id = "containerScrollDiploma";
   containerScrollDiploma.classList.add("containerScrollDiploma");
   sectionMeDiploma.append(containerScrollDiploma);
+
+  const sectionSlider = document.createElement("section");
+  sectionSlider.id = "sectionSlider";
+  sectionSlider.classList.add("sectionSlider");
+  containerScrollDiploma.appendChild(sectionSlider);
 
   const dipA1 = document.createElement("a");
   dipA1.classList.add("dipA1");
   dipA1.setAttribute("href", "../src/component/main/profile_Img/Unknownjs.pdf");
   dipA1.setAttribute("target", "_blank");
-  containerScrollDiploma.appendChild(dipA1);
+  sectionSlider.appendChild(dipA1);
 
   const firstImgDip = document.createElement("img");
   firstImgDip.src = imageDep1;
@@ -356,7 +363,7 @@ export default function MainContainer() {
   dipA2.classList.add("dipA1");
   dipA2.setAttribute("href", "../src/component/main/profile_Img/Unknown.pdf");
   dipA2.setAttribute("target", "_blank");
-  containerScrollDiploma.appendChild(dipA2);
+  sectionSlider.appendChild(dipA2);
 
   const firstImgDip2 = document.createElement("img");
   firstImgDip2.src = imageDep2;
@@ -367,7 +374,7 @@ export default function MainContainer() {
   dipA3.classList.add("dipA1");
   dipA3.setAttribute("href", "../src/component/main/profile_Img/bk2bddt3.pdf");
   dipA3.setAttribute("target", "_blank");
-  containerScrollDiploma.appendChild(dipA3);
+  sectionSlider.appendChild(dipA3);
 
   const firstImgDip3 = document.createElement("img");
   firstImgDip3.src = imageDep3;
@@ -375,8 +382,10 @@ export default function MainContainer() {
   dipA3.appendChild(firstImgDip3);
 
   const buttonLeft = document.createElement("button");
+  buttonLeft.id = "buttonLeft";
   buttonLeft.classList.add("buttonLeft", "button");
   sectionMeDiploma.prepend(buttonLeft);
+  buttonLeft.addEventListener("click", sliderLeft);
 
   const spanButtonLeft = document.createElement("span");
   spanButtonLeft.classList.add("spanButtonLeft");
@@ -384,8 +393,10 @@ export default function MainContainer() {
   buttonLeft.append(spanButtonLeft);
 
   const buttonRight = document.createElement("button");
+  buttonRight.id = "buttonRight";
   buttonRight.classList.add("buttonRight", "button");
   sectionMeDiploma.append(buttonRight);
+  buttonRight.addEventListener("click", sliderRight);
 
   const spanButtonRight = document.createElement("span");
   spanButtonRight.classList.add("spanButtonRight");
