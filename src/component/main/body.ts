@@ -49,19 +49,19 @@ export default function MainContainer() {
   mayImg.setAttribute("src", profileImg);
   divImgMay.append(mayImg);
 
-  const containerMiInfo = document.createElement("div");
-  containerMiInfo.classList.add("containerMiInfo");
-  containerMayImgSection.append(containerMiInfo);
+  const sectionTitleName = document.createElement("article");
+  sectionTitleName.classList.add("sectionTitleName");
+  divImgMay.appendChild(sectionTitleName);
 
   const titleNameH3 = document.createElement("h3");
   titleNameH3.classList.add("titleNameH3");
   titleNameH3.textContent = "Name: Lagaev Sergei";
-  containerMiInfo.append(titleNameH3);
+  sectionTitleName.append(titleNameH3);
 
   const miLocation = document.createElement("h3");
   miLocation.classList.add("mi-location");
   miLocation.innerText = "Profession: JavaScript Developer";
-  containerMiInfo.append(miLocation);
+  sectionTitleName.append(miLocation);
 
   // profile image section
 
@@ -76,22 +76,13 @@ export default function MainContainer() {
 
   const aboutMyTitle = document.createElement("h3");
   aboutMyTitle.classList.add("aboutMyTitle");
-  aboutMyTitle.innerText = "About";
+  aboutMyTitle.innerText = "About Me";
   aboutMyProfel.appendChild(aboutMyTitle);
-
-  const aboutMyTitle2 = document.createElement("h3");
-  aboutMyTitle2.classList.add("aboutMyTitle2");
-  aboutMyTitle2.innerText = "Me";
-  aboutMyProfel.appendChild(aboutMyTitle2);
-
-  const containerInfoAboutMe = document.createElement("div");
-  containerInfoAboutMe.classList.add("containerInfoAboutMe");
-  containerAboutMy.append(containerInfoAboutMe);
 
   const infoAboutMeP = document.createElement("p");
   infoAboutMeP.classList.add("infoAboutMeP");
   infoAboutMeP.innerText = titleInfoMe;
-  containerInfoAboutMe.append(infoAboutMeP);
+  aboutMyProfel.append(infoAboutMeP);
 
   // section about my
 

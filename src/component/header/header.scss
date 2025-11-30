@@ -1,9 +1,5 @@
 .hidden {
-  overflow-x: hidden;
-}
-
-.display-none {
-  display: none;
+  overflow: hidden;
 }
 
 .header {
@@ -47,16 +43,20 @@
   justify-content: center;
   margin-top: 1rem;
   .text-title-header {
-    font-size: 2vw;
+    font-size: 2rem;
+    @media (max-width: 700px) {
+      & {
+        font-size: 1rem;
+      }
+    }
   }
 }
 
 .container-burger {
+  position: relative;
   width: 2rem;
   .lane {
     cursor: pointer;
-    position: relative;
-    background: transparent;
     border: none;
     display: flex;
     width: 2.5rem;
@@ -86,20 +86,64 @@
     transform-origin: bottom left;
     transition: 1s;
   }
+
   .burger-div-header {
+    transform: translate(100%);
+    transition: 2s;
+  }
+}
+
+.display-none {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1rem;
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  width: 60vw;
+  background-color: var(--color-header);
+  border-radius: 1rem 0rem 0rem 1rem;
+  box-shadow: 0rem 0rem 1rem #6b6b6b;
+  transform: translate(0%);
+  transition: 2s;
+  .articleOnPage {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 6.8vw;
-    right: -1.1vw;
-    width: 15vw;
-    height: 20vw;
-    background-color: var(--color-header);
-    border-radius: 1rem 0rem 0rem 1rem;
-    box-shadow: 0rem 0rem 1rem #6b6b6b;
-    .title-about-page {
-      font-size: 2vw;
-      margin: 0.5rem 0rem 0rem 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media (max-width: 700px) {
+      & {
+        flex-direction: column;
+      }
+      .iframeOnPage {
+        display: none;
+      }
+    }
+  }
+  .iframeOnPage {
+    width: 25rem;
+    height: 4rem;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 11px 1px black;
+  }
+  .title-about-page {
+    font-size: 2rem;
+    align-self: center;
+    font-family: math;
+  }
+  .linkPage1 {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+    font-size: 1.5rem;
+    &:hover {
+      color: red;
+      transition: 1s;
     }
   }
 }
