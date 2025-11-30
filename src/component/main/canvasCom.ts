@@ -67,7 +67,7 @@ export default function CanvasCreate() {
       const percent = Number(canvas.dataset.percent) || 0;
       const ctx = setupCanvas(canvas);
       const radius = canvas.width / 2 - 3;
-      const lineWidth = 8;
+      const lineWidth = 3;
       const duration = 10000;
 
       skills.push({ canvas, ctx, percent, radius, lineWidth, duration });
