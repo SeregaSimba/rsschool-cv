@@ -103,12 +103,12 @@ export default function CanvasCreate() {
 
     let resizeTimeout: number | undefined;
 
-    window.addEventListener("resize", () => {
-      if (resizeTimeout) clearTimeout(resizeTimeout);
-      resizeTimeout = window.setTimeout(() => {
-        location.reload();
-      }, 300);
-    });
+    // window.addEventListener("resize", () => {
+    //   if (resizeTimeout) clearTimeout(resizeTimeout);
+    //   resizeTimeout = window.setTimeout(() => {
+    //     location.reload();
+    //   }, 300);
+    // });
   }
 
   window.addEventListener("load", startAllAnimations);
