@@ -12,91 +12,104 @@ body {
 .container-main-div {
   display: flex;
   width: 100%;
-  height: 25rem;
-  justify-content: center;
+  gap: 2rem;
+  @media (max-width: 1100px) {
+    & {
+      flex-direction: column;
+    }
+  }
 }
 
 .container-May-Img-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 35%;
 }
 
 .div-img-may {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 1;
-  top: -20vw;
-  left: -25vw;
-  max-width: 100vw;
+  flex-direction: column;
+  transform: translate(-17rem, -19rem);
 
-  // background-color: var(--color-header);
-  // width: 15rem;
-  // height: 16rem;
-  // border-radius: 50%;
+  @media (max-width: 600px) {
+    & {
+      transform: translate(-11rem, -10rem);
+    }
+  }
 }
 
 .may-img {
   // border-radius: 50%;
-  width: 40vw;
+  width: 40rem;
   height: auto;
+  @media (max-width: 400px) {
+    & {
+      width: 20rem;
+    }
+  }
 }
 // mi image
 
 // about mi
 .container-about-my {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
+  margin-top: 6rem;
+  @media (max-width: 1100px) {
+    & {
+      margin: 0;
+    }
+  }
 }
 
 .about-my-profele {
-  margin-top: 1rem;
-  display: flex;
-  width: 40%;
-  height: 2.3rem;
-  font-size: 2vw;
+  text-align: center;
+  width: 90%;
+  @media (max-width: 1100px) {
+    & {
+      width: auto;
+      margin: 0 10px;
+    }
+  }
 }
 
 .aboutMyTitle {
   font-size: 3vw;
   color: white;
-}
-
-.aboutMyTitle2 {
-  font-size: 3vw;
-  margin-left: 0.5rem;
-  color: white;
-  width: 100%;
-}
-
-.containerInfoAboutMe {
+  @media (max-width: 1100px) {
+    & {
+      font-size: 2rem;
+    }
+  }
 }
 
 .infoAboutMeP {
+  margin-top: 2rem;
+  font-size: 1.5rem;
   color: #6b6b6b;
+  @media (max-width: 1100px) {
+    & {
+      font-size: 1rem;
+    }
+  }
 }
 // about mi
 
 // section languages
 
 .containerMiInfo {
-  position: absolute;
   z-index: 99;
-  top: 31vw;
-  left: 0vw;
+  top: 51vw;
+  left: 21vw;
   background-color: gold;
   opacity: 0.7;
   width: 20vw;
 }
 
+.sectionTitleName {
+  background-color: gold;
+  transform: translate(9rem, 0rem);
+}
+
 .titleNameH3 {
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   margin: 0 1.5rem;
   color: white;
   border-bottom: solid 2px black;
@@ -105,7 +118,7 @@ body {
 
 .mi-location {
   color: white;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 .container-languages {
@@ -288,6 +301,7 @@ body {
 }
 
 .contact-My-H3 {
+  margin-top: 3vw;
   font-size: 3vw;
   width: 100%;
   color: white;
@@ -321,6 +335,11 @@ body {
   cursor: pointer;
   transition: 1s;
   font-size: 2vw;
+  @media (max-width: 1100px) {
+    & {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 .colMeP:hover {
@@ -350,6 +369,11 @@ body {
   cursor: pointer;
   transition: 1s;
   font-size: 2vw;
+  @media (max-width: 1100px) {
+    & {
+      margin: 0rem;
+    }
+  }
 }
 
 .meEmailP:hover {
@@ -377,20 +401,96 @@ body {
 }
 // contact my
 
-.containerlinkMesseger {
+.container-Me-Diploma {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.divLinkMassege {
+.title-H3-Diploma {
+  margin-top: 3vw;
+  font-size: 3vw;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  color: white;
 }
 
-.linkVk {
+.section-Me-Diploma {
+  width: 55vw;
+  height: 25vw;
+  background-color: rgb(0, 0, 0);
+  margin: 3vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.imageVk {
+.containerScrollDiploma {
+  width: 75%;
+  overflow: hidden;
 }
 
-.linkIns {
+.sectionSlider {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
-.imageIns {
+.buttonLeft {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #6b6b6b;
+  border: solid 0px;
+  cursor: pointer;
+}
+
+.spanButtonLeft {
+  font-size: 1.5vw;
+  transition: 1s;
+}
+
+.spanButtonLeft:hover {
+  transition: 1s;
+  margin-right: 20px;
+}
+
+.buttonRight {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #6b6b6b;
+  border: solid 0px;
+  cursor: pointer;
+}
+
+.spanButtonRight {
+  font-size: 1.5vw;
+  transition: 1s;
+}
+
+.spanButtonRight:hover {
+  transition: 1s;
+  margin-left: 20px;
+}
+
+.button {
+  transition: 1s;
+}
+
+.button:hover {
+  border: solid 1px white;
+  transition: 1s;
+  background-color: gold;
+}
+
+.dipA1 {
+  flex: 0 0 100%;
+}
+
+.firstDipImg {
+  width: 100%;
+  height: 100%;
 }

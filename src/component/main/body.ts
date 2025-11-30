@@ -9,11 +9,15 @@ import iconWB from "../main/profile_Img/icons8-webpack.svg";
 import iconMD from "../main/profile_Img/Markdown.svg";
 import iconGit from "../main/profile_Img/icons8-git.svg";
 import imageMee from "../main/profile_Img/miFotoSev1.jpg";
+import imageDep1 from "../main/profile_Img/DipHTMLCSS.png";
+import imageDep2 from "../main/profile_Img/DipJs.png";
+import imageDep3 from "../main/profile_Img/DipRSS.png";
 import imgLogo from "../main/profile_Img/sloth_u7rwxudebo7e.svg";
 
 import iconVk from "../main/profile_Img/vk.svg";
 import iconGitHub from "../main/profile_Img/gitHub.svg";
 import iconInst from "../main/profile_Img/ins.svg";
+import { sliderLeft, sliderRight } from "./buttonSlider";
 
 export default function MainContainer() {
   const titleInfoMe =
@@ -45,19 +49,19 @@ export default function MainContainer() {
   mayImg.setAttribute("src", profileImg);
   divImgMay.append(mayImg);
 
-  const containerMiInfo = document.createElement("div");
-  containerMiInfo.classList.add("containerMiInfo");
-  containerMayImgSection.append(containerMiInfo);
+  const sectionTitleName = document.createElement("article");
+  sectionTitleName.classList.add("sectionTitleName");
+  divImgMay.appendChild(sectionTitleName);
 
   const titleNameH3 = document.createElement("h3");
   titleNameH3.classList.add("titleNameH3");
   titleNameH3.textContent = "Name: Lagaev Sergei";
-  containerMiInfo.append(titleNameH3);
+  sectionTitleName.append(titleNameH3);
 
   const miLocation = document.createElement("h3");
   miLocation.classList.add("mi-location");
   miLocation.innerText = "Profession: JavaScript Developer";
-  containerMiInfo.append(miLocation);
+  sectionTitleName.append(miLocation);
 
   // profile image section
 
@@ -72,22 +76,13 @@ export default function MainContainer() {
 
   const aboutMyTitle = document.createElement("h3");
   aboutMyTitle.classList.add("aboutMyTitle");
-  aboutMyTitle.innerText = "About";
+  aboutMyTitle.innerText = "About Me";
   aboutMyProfel.appendChild(aboutMyTitle);
-
-  const aboutMyTitle2 = document.createElement("h3");
-  aboutMyTitle2.classList.add("aboutMyTitle2");
-  aboutMyTitle2.innerText = "Me";
-  aboutMyProfel.appendChild(aboutMyTitle2);
-
-  const containerInfoAboutMe = document.createElement("div");
-  containerInfoAboutMe.classList.add("containerInfoAboutMe");
-  containerAboutMy.append(containerInfoAboutMe);
 
   const infoAboutMeP = document.createElement("p");
   infoAboutMeP.classList.add("infoAboutMeP");
   infoAboutMeP.innerText = titleInfoMe;
-  containerInfoAboutMe.append(infoAboutMeP);
+  aboutMyProfel.append(infoAboutMeP);
 
   // section about my
 
@@ -149,13 +144,13 @@ export default function MainContainer() {
 
   const canvasCSS = document.createElement("canvas");
   canvasCSS.classList.add("canvasCSS");
-  canvasCSS.setAttribute("data-percent", "85");
+  canvasCSS.setAttribute("data-percent", "90");
   canvasCSS.id = "myCanvas";
   radiusCSS.appendChild(canvasCSS);
 
   const pTitleRadiusCss = document.createElement("p");
   pTitleRadiusCss.classList.add("pTitleRadius");
-  pTitleRadiusCss.innerText = "85%";
+  pTitleRadiusCss.innerText = "90%";
   radiusCSS.appendChild(pTitleRadiusCss);
 
   const containerScss = document.createElement("div");
@@ -186,13 +181,13 @@ export default function MainContainer() {
 
   const canvasJS = document.createElement("canvas");
   canvasJS.classList.add("canvasJS");
-  canvasJS.setAttribute("data-percent", "65");
+  canvasJS.setAttribute("data-percent", "85");
   canvasJS.id = "myCanvas";
   radiusJS.appendChild(canvasJS);
 
   const pTitleRadiusJs = document.createElement("p");
   pTitleRadiusJs.classList.add("pTitleRadius");
-  pTitleRadiusJs.innerText = "65%";
+  pTitleRadiusJs.innerText = "85%";
   radiusJS.appendChild(pTitleRadiusJs);
 
   const containerTs = document.createElement("div");
@@ -251,7 +246,7 @@ export default function MainContainer() {
 
   const contactMyH3 = document.createElement("h3");
   contactMyH3.classList.add("contact-My-H3");
-  contactMyH3.innerText = "Contact Me";
+  contactMyH3.innerText = "Contact My";
   containerContactMy.append(contactMyH3);
 
   const contactMyDiv = document.createElement("div");
@@ -319,33 +314,85 @@ export default function MainContainer() {
 
   // me e-mail
 
-  const containerLinkMesseger = document.createElement("div");
-  containerLinkMesseger.classList.add("containerlinkMesseger");
-  containerContactMy.append(containerLinkMesseger);
+  // container me Diploma
 
-  const divLinkMassege = document.createElement("div");
-  divLinkMassege.classList.add("divLinkMassege");
-  containerLinkMesseger.append(divLinkMassege);
+  const containerMeDiploma = document.createElement("div");
+  containerMeDiploma.classList.add("container-Me-Diploma");
+  main.append(containerMeDiploma);
 
-  const linkVk = document.createElement("a");
-  linkVk.classList.add("linkVk");
-  linkVk.setAttribute("href", "https://m.vk.com/best.sa92");
-  divLinkMassege.append(linkVk);
+  const titleH3Diploma = document.createElement("h3");
+  titleH3Diploma.classList.add("title-H3-Diploma");
+  titleH3Diploma.innerText = "Me Diploma";
+  containerMeDiploma.append(titleH3Diploma);
 
-  const imageVk = document.createElement("img");
-  imageVk.classList.add("imageVk");
-  imageVk.setAttribute("src", iconVk);
-  linkVk.append(imageVk);
+  const sectionMeDiploma = document.createElement("section");
+  sectionMeDiploma.classList.add("section-Me-Diploma");
+  containerMeDiploma.append(sectionMeDiploma);
 
-  const linkIns = document.createElement("a");
-  linkIns.classList.add("linkIns");
-  linkIns.setAttribute("href", "https://www.instagram.com/serega_simba/");
-  divLinkMassege.append(linkIns);
+  const containerScrollDiploma = document.createElement("sections");
+  containerScrollDiploma.id = "containerScrollDiploma";
+  containerScrollDiploma.classList.add("containerScrollDiploma");
+  sectionMeDiploma.append(containerScrollDiploma);
 
-  const imageIns = document.createElement("img");
-  imageIns.classList.add("imageIns");
-  imageIns.setAttribute("src", iconInst);
-  linkIns.append(imageIns);
+  const sectionSlider = document.createElement("section");
+  sectionSlider.id = "sectionSlider";
+  sectionSlider.classList.add("sectionSlider");
+  containerScrollDiploma.appendChild(sectionSlider);
 
-  // contact my
+  const dipA1 = document.createElement("a");
+  dipA1.classList.add("dipA1");
+  dipA1.setAttribute("href", "../src/component/main/profile_Img/Unknownjs.pdf");
+  dipA1.setAttribute("target", "_blank");
+  sectionSlider.appendChild(dipA1);
+
+  const firstImgDip = document.createElement("img");
+  firstImgDip.src = imageDep1;
+  firstImgDip.classList.add("firstDipImg");
+  dipA1.appendChild(firstImgDip);
+
+  const dipA2 = document.createElement("a");
+  dipA2.classList.add("dipA1");
+  dipA2.setAttribute("href", "../src/component/main/profile_Img/Unknown.pdf");
+  dipA2.setAttribute("target", "_blank");
+  sectionSlider.appendChild(dipA2);
+
+  const firstImgDip2 = document.createElement("img");
+  firstImgDip2.src = imageDep2;
+  firstImgDip2.classList.add("firstDipImg");
+  dipA2.appendChild(firstImgDip2);
+
+  const dipA3 = document.createElement("a");
+  dipA3.classList.add("dipA1");
+  dipA3.setAttribute("href", "../src/component/main/profile_Img/bk2bddt3.pdf");
+  dipA3.setAttribute("target", "_blank");
+  sectionSlider.appendChild(dipA3);
+
+  const firstImgDip3 = document.createElement("img");
+  firstImgDip3.src = imageDep3;
+  firstImgDip3.classList.add("firstDipImg");
+  dipA3.appendChild(firstImgDip3);
+
+  const buttonLeft = document.createElement("button");
+  buttonLeft.id = "buttonLeft";
+  buttonLeft.classList.add("buttonLeft", "button");
+  sectionMeDiploma.prepend(buttonLeft);
+  buttonLeft.addEventListener("click", sliderLeft);
+
+  const spanButtonLeft = document.createElement("span");
+  spanButtonLeft.classList.add("spanButtonLeft");
+  spanButtonLeft.innerText = "<";
+  buttonLeft.append(spanButtonLeft);
+
+  const buttonRight = document.createElement("button");
+  buttonRight.id = "buttonRight";
+  buttonRight.classList.add("buttonRight", "button");
+  sectionMeDiploma.append(buttonRight);
+  buttonRight.addEventListener("click", sliderRight);
+
+  const spanButtonRight = document.createElement("span");
+  spanButtonRight.classList.add("spanButtonRight");
+  spanButtonRight.innerText = ">";
+  buttonRight.append(spanButtonRight);
+
+  // container me Diploma
 }

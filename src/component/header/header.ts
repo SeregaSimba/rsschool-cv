@@ -59,6 +59,7 @@ export function headerContainer() {
 
   const burgerDivHeader = document.createElement("div");
   burgerDivHeader.classList.add("display-none");
+  burgerDivHeader.classList.add("burger-div-header");
   containerBurger.appendChild(burgerDivHeader);
 
   const titleAboutPage = document.createElement("h3");
@@ -66,24 +67,37 @@ export function headerContainer() {
   titleAboutPage.classList.add("title-about-page");
   burgerDivHeader.appendChild(titleAboutPage);
 
+  const articleOnPage = document.createElement("article");
+  articleOnPage.classList.add("articleOnPage");
+  burgerDivHeader.appendChild(articleOnPage);
+
   const linkPage1 = document.createElement("a");
-  linkPage1.textContent = "----";
+  linkPage1.setAttribute(
+    "href",
+    "https://seregasimba.github.io/Christmas-shop-page-rss/"
+  );
+  linkPage1.setAttribute("target", "_blank");
+  linkPage1.innerText = "Link: - My first job";
   linkPage1.classList.add("linkPage1");
-  burgerDivHeader.appendChild(linkPage1);
+  articleOnPage.appendChild(linkPage1);
+
+  const iframeOnPage = document.createElement("iframe");
+  iframeOnPage.classList.add("iframeOnPage");
+  iframeOnPage.src = "https://seregasimba.github.io/Christmas-shop-page-rss/";
+  articleOnPage.appendChild(iframeOnPage);
 
   const linkPage2 = document.createElement("a");
-  linkPage2.textContent = "----";
+  linkPage2.textContent = "Correctional work is underway ⚠️ ☢️ ";
   linkPage2.classList.add("linkPage2");
   burgerDivHeader.appendChild(linkPage2);
 
   const linkPage3 = document.createElement("a");
-  linkPage3.textContent = "----";
+  linkPage3.textContent = "Correctional work is underway ⚠️ ☢️ ";
   linkPage3.classList.add("linkPage3");
   burgerDivHeader.appendChild(linkPage3);
 
   lane.addEventListener("click", () => {
     lane.classList.toggle("openBurger");
-    burgerDivHeader.classList.toggle("display-none");
     burgerDivHeader.classList.toggle("burger-div-header");
     document.body.classList.toggle("hidden");
   });
