@@ -74,7 +74,7 @@ export function headerContainer() {
   const linkPage1 = document.createElement("a");
   linkPage1.setAttribute(
     "href",
-    "https://seregasimba.github.io/Christmas-shop-page-rss/"
+    "https://seregasimba.github.io/Christmas-shop-page-rss/",
   );
   linkPage1.setAttribute("target", "_blank");
   linkPage1.innerText = "Link: - My first job";
@@ -87,14 +87,21 @@ export function headerContainer() {
   articleOnPage.appendChild(iframeOnPage);
 
   const linkPage2 = document.createElement("a");
-  linkPage2.textContent = "Correctional work is underway ⚠️ ☢️ ";
-  linkPage2.classList.add("linkPage2");
+  linkPage2.textContent = "My Company Gab";
+  linkPage2.classList.add("linkPage1");
+  linkPage2.setAttribute("target", "_blanc");
+  linkPage2.setAttribute("href", "https://bts-rs.netlify.app/main");
   burgerDivHeader.appendChild(linkPage2);
 
   const linkPage3 = document.createElement("a");
   linkPage3.textContent = "Correctional work is underway ⚠️ ☢️ ";
   linkPage3.classList.add("linkPage3");
   burgerDivHeader.appendChild(linkPage3);
+
+  const linkPage4 = document.createElement("a");
+  linkPage4.textContent = "Correctional work is underway ⚠️ ☢️ ";
+  linkPage4.classList.add("linkPage4");
+  burgerDivHeader.appendChild(linkPage4);
 
   lane.addEventListener("click", () => {
     lane.classList.toggle("openBurger");
