@@ -9,7 +9,7 @@ module.exports = {
     filename: "bundle.js",
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".ts", ".js", ".scss", ".css"],
   },
   module: {
     rules: [
@@ -24,6 +24,7 @@ module.exports = {
         test: /\.s?css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      // Изображения
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",

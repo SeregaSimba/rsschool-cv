@@ -95,6 +95,11 @@ export function headerContainer() {
 
   const linkPage3 = document.createElement("a");
   linkPage3.textContent = "Correctional work is underway ⚠️ ☢️ ";
+  linkPage3.setAttribute("target", "_blanc");
+  linkPage3.setAttribute(
+    "href",
+    "https://github.com/SeregaSimba/async-race-my",
+  );
   linkPage3.classList.add("linkPage3");
   burgerDivHeader.appendChild(linkPage3);
 
