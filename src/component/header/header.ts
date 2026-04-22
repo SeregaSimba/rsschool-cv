@@ -98,7 +98,7 @@ export function headerContainer() {
   linkPage3.setAttribute("target", "_blanc");
   linkPage3.setAttribute(
     "href",
-    "https://github.com/SeregaSimba/async-race-my",
+    "https://seregasimba.github.io/async-race-my/",
   );
   linkPage3.classList.add("linkPage3");
   burgerDivHeader.appendChild(linkPage3);
