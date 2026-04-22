@@ -27,7 +27,6 @@ export function headerContainer() {
   // linkRss.appendChild(imgRssLink);
 
   // link rss
-  // title
 
   const containerTitleHeader = document.createElement("div");
   containerTitleHeader.classList.add("container-title-header");
