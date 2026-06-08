@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: start;
   justify-content: space-around;
-  @media (max-width: 400px) {
+  @media (max-width: 700px) {
     & {
       flex-direction: column;
     }
@@ -37,6 +37,12 @@ body {
   justify-content: center;
   text-align: center;
   height: 40rem;
+  @media (max-width: 400px) {
+    & {
+      flex-direction: column;
+      height: 25rem;
+    }
+  }
 }
 
 .titleConP {
