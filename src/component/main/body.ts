@@ -1,5 +1,5 @@
 import "../main/body.scss";
-import profileImg from "../main/profile_Img/miFotoSev1.png";
+import profileImg from "../main/profile_Img/miFotoSev11.png";
 import iconHtml from "../main/profile_Img/icons8-html.svg";
 import iconCss from "../main/profile_Img/icons8-css.svg";
 import iconSass from "../main/profile_Img/icons8-sass.svg";
@@ -22,8 +22,55 @@ import iconInst from "../main/profile_Img/ins.svg";
 import { sliderLeft, sliderRight } from "./buttonSlider";
 
 export default function MainContainer() {
-  const titleInfoMe =
-    "I am 33 years old. I have recently started developing my career in front-end development, as I am inspired by the opportunity to implement my ideas and create modern, interactive websites. I have over 10 years of experience in the public catering industry, working in various positions, and for the past 6 years as a manager in a chain of nightclubs in Moscow, St. Petersburg, Kazan, Nizhny Novgorod, and Yerevan. I have been involved in the opening of new clubs, the recruitment and training of staff, conducted over 3,700 interviews, and effectively transferred management processes after successful project launches. I consider myself a fast learner and constantly strive for new knowledge. I am enthusiastically mastering HTML and CSS, and actively learning JavaScript. In the near future, I plan to delve into other programming languages and develop my career in the IT field.";
+  const titleInfoMe2 = `SUMMARY
+Junior Frontend-разработчик с 2 годами опыта изучения и практики веб-разработки. 
+Уверенно владею HTML, CSS, JavaScript. Создаю интерактивные веб-сайты и SPA. 
+Быстро обучаюсь, имею опыт управления проектами и работы в команде (10+ лет в 
+бизнесе, 3000+ проведённых собеседований). Ищу позицию Junior Frontend Developer 
+в продуктовой компании для роста и вклада в проекты.`;
+
+  const titleInfoMe = `
+
+
+НАВЫКИ
+• Языки: JavaScript (ES6+), HTML5, CSS3
+• Фреймворки: React (базовый уровень)
+• Инструменты: Git, GitHub, VS Code, Chrome DevTools
+• Концепции: DOM, асинхронность (Promises, async/await), REST API
+• Дополнительно: адаптивная верстка, кроссбраузерность, TDD
+
+ОПЫТ РАБОТЫ
+
+Управляющий (сеть ночных клубов) | Москва, Санкт-Петербург, Казань, 
+Нижний Новгород, Еревана
+2018 — 2025 (7 лет)
+
+• Открыл 2 новых клубов в разных городах, успешно передавал процессы управления 
+  после запуска
+• Провёл 3000+ собеседований, подобрал и обучил команду из 200+ человек
+• Оптимизировал процессы найма и онбординга, сократив время закрытия вакансий на 30%
+• Управлял бюджетом команды и операционными процессами
+
+ОПЫТ В FRONTEND (pet-проекты и обучение)
+2024 — настоящее время
+
+• Разработал 5+ веб-приложения на JavaScript
+• Изучаю React, TypeScript, тестирование (Jest, React Testing Library)
+• Прошел RS School (Frontend-разработка)
+• Активно решаю алгоритмические задачи на Codewars, LeetCode
+
+ОБРАЗОВАНИЕ
+[ПУМИ] — [ТИПО]
+[Не окончиное]
+
+Курсы:
+• FructCode (Frontend-разработка) — 2023—2024
+• RS School (Frontend-разработка) — 2024—2025
+
+ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+• Языки: Русский (родной), Английский (A1)
+• Личные качества: быстрая обучаемость, работа в команде, управление проектами, 
+  решение сложных задач`;
 
   const main = document.createElement("main");
   main.classList.add("main");
@@ -42,7 +89,7 @@ export default function MainContainer() {
   containerMayImgSection.classList.add("container-May-Img-section");
   containerMainDiv.append(containerMayImgSection);
 
-  const divImgMay = document.createElement("div");
+  const divImgMay = document.createElement("section");
   divImgMay.classList.add("div-img-may");
   containerMayImgSection.append(divImgMay);
 
@@ -50,6 +97,15 @@ export default function MainContainer() {
   mayImg.classList.add("may-img");
   mayImg.setAttribute("src", profileImg);
   divImgMay.append(mayImg);
+
+  const titleCon = document.createElement("article");
+  titleCon.classList.add("titleCon");
+  containerMayImgSection.append(titleCon);
+
+  const titleConP = document.createElement("p");
+  titleConP.classList.add("titleConP");
+  titleConP.innerText = titleInfoMe2;
+  titleCon.append(titleConP);
 
   const sectionTitleName = document.createElement("article");
   sectionTitleName.classList.add("sectionTitleName");
