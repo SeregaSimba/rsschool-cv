@@ -80,11 +80,6 @@ export function headerContainer() {
   linkPage1.classList.add("linkPage1");
   articleOnPage.appendChild(linkPage1);
 
-  const iframeOnPage = document.createElement("iframe");
-  iframeOnPage.classList.add("iframeOnPage");
-  iframeOnPage.src = "https://seregasimba.github.io/Christmas-shop-page-rss/";
-  articleOnPage.appendChild(iframeOnPage);
-
   const linkPage2 = document.createElement("a");
   linkPage2.textContent = "My Company Gab";
   linkPage2.classList.add("linkPage1");
